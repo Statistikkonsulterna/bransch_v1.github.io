@@ -12,33 +12,5 @@ var toolsPage_toolset = [
     "image": "assets/images/chart/bubble-chart.png",
     "icon": "assets/images/chart/vizabi_bubbles.svg",
     "url": ""
-  },
-  {
-    "id": "bubble_countries",
-    "tool": "BubbleChart",
-    "toolVariation": "Base",
-    "mainMarker": "bubble",
-    "config": "BubbleChart-basic",
-    "dataSources": ["tva_countries"],
-    "transition": "none",
-    "title": "Countries",
-    "hideThumbnail": false,
-    "image": "assets/images/chart/bubble-chart.png",
-    "icon": "assets/images/chart/vizabi_bubbles.svg",
-    "url": ""
-  },
-  {
-    "id": "bubble_lan",
-    "tool": "BubbleChart",
-    "toolVariation": "Base",
-    "mainMarker": "bubble",
-    "config": ["BubbleChart-basic"],
-    "dataSources": "tva_lan",
-    "transition": "none",
-    "title": "Län",
-    "hideThumbnail": false,
-    "image": "assets/images/chart/bubble-chart.png",
-    "icon": "assets/images/chart/vizabi_bubbles.svg",
-    "url": ""
   }
 ];
