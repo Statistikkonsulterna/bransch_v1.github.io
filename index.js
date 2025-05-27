@@ -7,12 +7,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (chartType === 'BubbleChart') {
             // Render default chart view (e.g., using canvas, SVG, or a chart library)
-            const chartContainer = document.createElement('div');
-            chartContainer.textContent = "Rendering Bubble Chart..."; // Placeholder logic
-            chartContainer.style.padding = '20px';
-            chartContainer.style.backgroundColor = '#f0f0f0';
+            const iframe = document.createElement('iframe');
+            iframe.src = 'https://statistikkonsulterna.github.io/bransch_v1.github.io/#$chart-type=bubble_bransch&url=v2';
+            iframe.width = '100%';
+            iframe.height = '600';
+            iframe.style.border = 'none';
+
+            placeholder.appendChild(iframe);
 
             // Optionally: call chart rendering function here, e.g., renderBubbleChart(chartContainer);
+            // https://statistikkonsulterna.github.io/bransch_v1.github.io/#$chart-type=bubble_bransch&url=v2
 
             placeholder.appendChild(chartContainer);
 
