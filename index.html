@@ -24,6 +24,30 @@
   <link rel="stylesheet" href="assets/css/VizabiSharedComponents.css">
   <link rel="stylesheet" href="assets/css/bubblechart.css">
   <link rel="stylesheet" href="styles.css">
+
+    <style>
+      .buttonb {
+        border: none;
+            color: white;
+            padding: 8px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: background-color 0.3s;
+      }
+      
+      .tab-bubble {background-color: #789e9e;}
+      .tab-bar {background-color: #60849a;}
+
+      h1 {
+        text-align: center;
+      }
+      </style>
+      
 </head>
 
 
@@ -65,6 +89,10 @@
     
   </div>
 
+  <div class="tabs">
+  <button class= "buttonb tab-bubble" id="tab-bubble">Bubbeldiagram</button>
+  <button class= "buttonb tab-bar" id="tab-bar">Rankat stapeldiagram</button>
+</div>
   
   <script src="vendor.min.js"></script>
   <script src="tools.min.js"></script>
