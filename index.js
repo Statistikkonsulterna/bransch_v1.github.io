@@ -2,10 +2,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const placeholder = document.getElementById('placeholder');
 
     // Function to update view based on chart type
-    function updateChart(chartType) {
+    function updateChart(chart_1) {
         placeholder.innerHTML = ''; // Clear previous content
 
-        if (chartType === 'BubbleChart') {
+        if (chart_1 === 'bubbs') {
             // Render default chart view (e.g., using canvas, SVG, or a chart library)
             const iframe = document.createElement('iframe');
             iframe.src = 'https://statistikkonsulterna.github.io/bransch_v1.github.io/#$chart-type=bubble_bransch&url=v2';
@@ -15,12 +15,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
             placeholder.appendChild(iframe);
 
-            // Optionally: call chart rendering function here, e.g., renderBubbleChart(chartContainer);
             // https://statistikkonsulterna.github.io/bransch_v1.github.io/#$chart-type=bubble_bransch&url=v2
 
             placeholder.appendChild(chartContainer);
 
-        } else if (chartType === 'BarRankChart') {
+        } else if (chart_1 === 'barRank') {
             // Load external view in iframe
             const iframe = document.createElement('iframe');
             iframe.src = 'https://amelia-bodin.github.io/ddf_bransch.github.io/';
@@ -34,13 +33,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Button event listeners
     document.getElementById('tab-bubble').addEventListener('click', function () {
-        updateChart('BubbleChart');
+        updateChart('bubbs');
     });
 
     document.getElementById('tab-bar').addEventListener('click', function () {
-        updateChart('BarRankChart');
+        updateChart('barRank');
     });
 
     // Initial load
-    updateChart('BubbleChart');
+    updateChart('bubbs');
 });
