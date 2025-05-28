@@ -125,7 +125,7 @@
         "hints/timeformatexample": "format exempel",
         "hints/min": "min",
         "hints/max": "max",
-        "hints/dataWarning": "OBS",
+        "hints/dataWarning": "Data Information",
         "hints/dataWarning-little": "Data",
         "hints/source": "More info and source",
         "hints/nodata": "No data",
